@@ -1,0 +1,46 @@
+{
+  "conversation_templates": {
+    "multimodal_summarization": {
+      "system_message": "You are an expert abstractive multimodal summarization system. Your task is to synthesize information from both text and images into coherent, comprehensive summaries. Generate fluent, well-structured summaries that capture the essential meaning and key information while maintaining factual accuracy.",
+      "description": "Optimized system message for abstractive multimodal summarization with focus on comprehensive coverage and ROUGE performance"
+    }
+  },
+  "summarization_prompts": {
+    "with_images": {
+      "training_prompt": "Using the provided images and the following article, write a comprehensive abstractive summary that synthesizes the main ideas, key events, and important visual information. Create a coherent narrative that covers all significant points while using clear, natural language:\n\n{text_content}",
+      "inference_prompt": "Using the provided images and the following article, write a comprehensive abstractive summary that synthesizes the main ideas, key events, and important visual information. Create a coherent narrative that covers all significant points while using clear, natural language:\n\n{text_content}",
+      "description": "Optimized for abstractive summarization with comprehensive coverage to improve ROUGE scores while incorporating visual information"
+    },
+    "without_images": {
+      "training_prompt": "Write a comprehensive abstractive summary of the following article that synthesizes the main ideas, key events, and important information. Create a coherent narrative that covers all significant points while using clear, natural language:\n\n{text_content}",
+      "inference_prompt": "Write a comprehensive abstractive summary of the following article that synthesizes the main ideas, key events, and important information. Create a coherent narrative that covers all significant points while using clear, natural language:\n\n{text_content}",
+      "description": "Text-only abstractive summarization optimized for comprehensive coverage and ROUGE performance"
+    }
+  },
+  "prompt_settings": {
+    "comprehensive_coverage": true,
+    "coherent_narrative": true,
+    "abstractive_focus": true,
+    "visual_integration": true,
+    "factual_accuracy_priority": true,
+    "natural_language_flow": true
+  },
+  "rouge_optimization": {
+    "techniques": [
+      "Comprehensive coverage of key information",
+      "Coherent narrative structure", 
+      "Natural language synthesis",
+      "Balanced information density",
+      "Semantic consistency with source",
+      "Clear topic progression",
+      "Factual accuracy maintenance"
+    ],
+    "avoid": [
+      "Missing important information",
+      "Fragmented or choppy text",
+      "Overly concise at expense of coverage",
+      "Factual inconsistencies",
+      "Poor coherence between sentences"
+    ]
+  }
+} 

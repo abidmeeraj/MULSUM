@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mulsum"
+version = "1.0.0"
+description = "MULSUM: A Multimodal Summarization System with Vis-Aligner and Diversity-Aware Image Selection"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Abid Ali"},
+    {name = "Diego Molla-Aliod"},
+    {name = "Usman Naseem"}
+]
+keywords = [
+    "multimodal",
+    "summarization",
+    "llava",
+    "vision-language",
+    "deep-learning",
+    "transformers"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "transformers>=4.40.0",
+    "peft>=0.10.0",
+    "Pillow>=10.0.0",
+    "bitsandbytes>=0.41.0",
+    "einops>=0.7.0",
+    "lmdb>=1.4.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "sentencepiece>=0.1.99",
+    "tensorboardX>=2.6",
+    "tqdm>=4.65.0",
+    "easydict>=1.10",
+    "protobuf>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+]
+gradio = [
+    "gradio>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/hanghuacs/MULSUM"
+Repository = "https://github.com/hanghuacs/MULSUM"
+Documentation = "https://github.com/hanghuacs/MULSUM#readme"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.json"]
+
+[tool.black]
+line-length = 120
+target-version = ['py310', 'py311', 'py312']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 120
