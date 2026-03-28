@@ -6,6 +6,8 @@
 
 MULSUM is a multimodal summarization system that generates text summaries enhanced with relevant images. It leverages a vision-language model architecture based on LLaVA with a custom Vis-Aligner module for improved image-text alignment.
 
+**📖 Paper:** [https://aclanthology.org/2026.eacl-long.16/](https://aclanthology.org/2026.eacl-long.16/)
+
 ## Features
 
 - **Multimodal Summarization**: Generate summaries that incorporate both text and images
@@ -185,8 +187,6 @@ The main configuration file (`configs/image_text_config.json`) contains all sett
 | `image_selection` | Image selection strategy and parameters |
 
 ## Citation
-
-**Paper Link:** [https://aclanthology.org/2026.eacl-long.16/](https://aclanthology.org/2026.eacl-long.16/)
 
 If you use MULSUM in your research, please cite our paper:
 
