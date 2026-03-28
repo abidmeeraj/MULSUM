@@ -189,13 +189,28 @@ The main configuration file (`configs/image_text_config.json`) contains all sett
 If you use MULSUM in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{ali2026mulsum,
-  title={MULSUM: A Multimodal Summarization System with Vis-Aligner and Diversity-Aware Image Selection},
-  author={Ali, Abid and Molla-Aliod, Diego and Naseem, Usman},
-  booktitle={Proceedings of the 2026 Conference of the European Chapter of the Association for Computational Linguistics (EACL)},
-  year={2026}
+@inproceedings{ali-etal-2026-mulsum,
+    title = "{MULSUM}: A Multimodal Summarization System with Vis-Aligner and Diversity-Aware Image Selection",
+    author = "Ali, Abid  and
+      Molla, Diego  and
+      Naseem, Usman",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.16/",
+    doi = "10.18653/v1/2026.eacl-long.16",
+    pages = "351--362",
+    ISBN = "979-8-89176-380-7",
+    abstract = "The abundance of multimodal news in digital form has intensified demand for systems that condense articles and images into concise, faithful digests. Yet most approaches simply conduct unimodal text summarization and attach the most-similar images with the text summary, which leads to redundancy both in processing visual content as well as in selection of images to complement the summary. We propose MULSUM, a two-step framework: (i) a Cross-Vis Aligner that projects image-level embeddings into a shared space and conditions a pre-trained LLM decoder to generate a visually informed text summary, and (ii) a Diversity-Aware Image Selector that, after the summary is produced, maximizes images-relevance to the summary while enforcing pairwise image diversity, yielding a compact, complementary image set. Experimental results on the benchmark MSMO (Multimodal Summarization with Multimodal Output) corpus show that MULSUM consistently outperforms strong baselines on automatic metrics such as ROUGE, while qualitative inspection shows that selected images act as explanatory evidence rather than ornamental add-ons. Human evaluation results shows that our diverse set of selected images was 13{\%} more helpful than mere similarity-based image selection."
 }
 ```
+
+**Paper Link:** [https://aclanthology.org/2026.eacl-long.16/](https://aclanthology.org/2026.eacl-long.16/)
 
 ## License
 
