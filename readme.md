@@ -186,6 +186,8 @@ The main configuration file (`configs/image_text_config.json`) contains all sett
 
 ## Citation
 
+**Paper Link:** [https://aclanthology.org/2026.eacl-long.16/](https://aclanthology.org/2026.eacl-long.16/)
+
 If you use MULSUM in your research, please cite our paper:
 
 ```bibtex
@@ -209,8 +211,6 @@ If you use MULSUM in your research, please cite our paper:
     abstract = "The abundance of multimodal news in digital form has intensified demand for systems that condense articles and images into concise, faithful digests. Yet most approaches simply conduct unimodal text summarization and attach the most-similar images with the text summary, which leads to redundancy both in processing visual content as well as in selection of images to complement the summary. We propose MULSUM, a two-step framework: (i) a Cross-Vis Aligner that projects image-level embeddings into a shared space and conditions a pre-trained LLM decoder to generate a visually informed text summary, and (ii) a Diversity-Aware Image Selector that, after the summary is produced, maximizes images-relevance to the summary while enforcing pairwise image diversity, yielding a compact, complementary image set. Experimental results on the benchmark MSMO (Multimodal Summarization with Multimodal Output) corpus show that MULSUM consistently outperforms strong baselines on automatic metrics such as ROUGE, while qualitative inspection shows that selected images act as explanatory evidence rather than ornamental add-ons. Human evaluation results shows that our diverse set of selected images was 13{\%} more helpful than mere similarity-based image selection."
 }
 ```
-
-**Paper Link:** [https://aclanthology.org/2026.eacl-long.16/](https://aclanthology.org/2026.eacl-long.16/)
 
 ## License
 
